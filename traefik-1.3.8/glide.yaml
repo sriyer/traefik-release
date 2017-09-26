@@ -1,0 +1,155 @@
+package: github.com/containous/traefik
+import:
+- package: github.com/BurntSushi/toml
+- package: github.com/BurntSushi/ty
+  subpackages:
+  - fun
+- package: github.com/Sirupsen/logrus
+- package: github.com/cenk/backoff
+- package: github.com/containous/flaeg
+- package: github.com/vulcand/oxy
+  version: 6c94d2888dba2b1a15a89b8a2ca515fc85e07477
+  repo: https://github.com/containous/oxy.git
+  vcs: git
+  subpackages:
+  - cbreaker
+  - connlimit
+  - forward
+  - roundrobin
+  - stream
+  - utils
+- package: github.com/containous/staert
+  version: 1e26a71803e428fd933f5f9c8e50a26878f53147
+- package: github.com/docker/engine-api
+  version: v0.4.0
+  subpackages:
+  - client
+  - types
+  - types/events
+  - types/filters
+- package: github.com/docker/go-connections
+  version: v0.2.1
+  subpackages:
+  - sockets
+  - tlsconfig
+- package: github.com/docker/go-units
+  version: 0dadbb0345b35ec7ef35e228dabb8de89a65bf52
+- package: github.com/docker/libkv
+  subpackages:
+  - store
+  - store/boltdb
+  - store/consul
+  - store/etcd
+  - store/zookeeper
+- package: github.com/elazarl/go-bindata-assetfs
+- package: github.com/containous/mux
+- package: github.com/hashicorp/consul
+  subpackages:
+  - api
+- package: github.com/streamrail/concurrent-map
+- package: github.com/stretchr/testify
+  subpackages:
+  - assert
+  - mock
+  - require
+- package: github.com/thoas/stats
+  version: 152b5d051953fdb6e45f14b6826962aadc032324
+- package: github.com/unrolled/render
+- package: github.com/vdemeester/docker-events
+  version: be74d4929ec1ad118df54349fda4b0cba60f849b
+- package: github.com/vulcand/vulcand
+  version: 42492a3a85e294bdbdd1bcabb8c12769a81ea284
+  subpackages:
+  - plugin/rewrite
+- package: github.com/xenolf/lego
+  version: 5dfe609afb1ebe9da97c9846d97a55415e5a5ccd
+  subpackages:
+  - acme
+- package: gopkg.in/fsnotify.v1
+- package: github.com/docker/docker
+  version: v1.13.0
+  subpackages:
+  - namesgenerator
+- package: github.com/mattn/go-shellwords
+- package: github.com/ryanuber/go-glob
+- package: github.com/mesos/mesos-go
+  subpackages:
+  - mesosproto
+  - mesos
+  - upid
+  - mesosutil
+  - detector
+- package: github.com/miekg/dns
+  version: 8060d9f51305bbe024b99679454e62f552cd0b0b
+- package: github.com/mesosphere/mesos-dns
+  version: b47dc4c19f215e98da687b15b4c64e70f629bea5
+  repo: https://github.com/containous/mesos-dns.git
+  vcs: git
+- package: github.com/abbot/go-http-auth
+- package: github.com/NYTimes/gziphandler
+  repo: https://github.com/containous/gziphandler.git
+  version: ^v1002.0.0
+  vcs: git
+- package: github.com/docker/leadership
+- package: github.com/satori/go.uuid
+  version: ^1.1.0
+- package: k8s.io/client-go
+  version: v2.0.0
+- package: github.com/gambol99/go-marathon
+  version: dd6cbd4c2d71294a19fb89158f2a00d427f174ab
+- package: github.com/ArthurHlt/go-eureka-client
+  subpackages:
+  - eureka
+- package: github.com/coreos/go-systemd
+  version: v14
+  subpackages:
+  - daemon
+- package: github.com/google/go-github
+- package: github.com/hashicorp/go-version
+- package: github.com/mvdan/xurls
+- package: github.com/go-kit/kit
+  version: v0.3.0
+  subpackages:
+  - metrics
+- package: github.com/eapache/channels
+  version: v1.1.0
+- package: golang.org/x/sys
+  version: 8d1157a435470616f975ff9bb013bea8d0962067
+- package: golang.org/x/net
+  version: 242b6b35177ec3909636b6cf6a47e8c2c6324b5d
+  subpackages:
+  - http2
+  - context
+- package: github.com/docker/distribution
+  version: v2.6.0
+- package: github.com/aws/aws-sdk-go
+  version: v1.6.18
+  subpackages:
+  - aws
+  - aws/credentials
+  - aws/defaults
+  - aws/ec2metadata
+  - aws/endpoints
+  - aws/request
+  - aws/session
+  - service/dynamodb
+  - service/dynamodb/dynamodbiface
+  - service/dynamodbattribute
+  - service/ec2
+  - service/ecs
+- package: cloud.google.com/go
+  version: v0.7.0
+  subpackages:
+  - compute/metadata
+- package: github.com/gogo/protobuf
+  version: v0.3
+  subpackages:
+  - proto
+- package: github.com/rancher/go-rancher
+  version: 5b8f6cc26b355ba03d7611fce3844155b7baf05b
+- package: golang.org/x/oauth2/google
+  version: 7fdf09982454086d5570c7db3e11f360194830ca
+- package: github.com/googleapis/gax-go
+  version: 9af46dd5a1713e8b5cd71106287eba3cefdde50b
+- package: google.golang.org/grpc
+  version: v1.2.0
